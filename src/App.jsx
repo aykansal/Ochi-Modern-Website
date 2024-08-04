@@ -1,5 +1,5 @@
 import React from "react";
-import { About, Eyes, Featured, LandingPage, Marquee, Navbar } from "./components";
+import { About, Eyes, Featured, LandingPage, Marquee, Navbar,Cards } from "./components";
 
 function App() {
   return (
@@ -10,6 +10,7 @@ function App() {
       <About />
       <Eyes/>
       <Featured />
+      <Cards />
     </div>
   );
 }
