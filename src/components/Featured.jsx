@@ -26,7 +26,7 @@ const Featured = () => {
       </div>
       <div className="cards w-full px-16 mt-16 flex gap-10">
         {projects.map((project) => (
-          <div key={project.id} className="w-1/2">
+          <div key={project.id} className="w-full md:w-1/2 ">
             <div className="flex gap-3 items-center mb-4">
               <div className="h-2 w-2 bg-zinc-900 dark:bg-zinc-100 rounded-full" />
               <span className="text-sm">{project.name}</span>
@@ -38,14 +38,28 @@ const Featured = () => {
             >
               {hoveredCard === project.id && (
                 <h1
-                  className={`absolute text-[#CDEA68] ${
-                    project.id === "FYDE"
-                      ? "left-full -translate-x-1/2"
-                      : "right-full translate-x-1/4"
-                  } top-1/2 text-[110px] font1 z-[9] -mt-10 leading-none`}
+                  className={`absolute text-[#CDEA68] tracking-wide top-1/2 text-[110px] overflow-hidden flex font1 z-[9] -mt-10 leading-none 
+                    ${
+                      project.id === "FYDE"
+                        ? "left-full -translate-x-1/2"
+                        : "right-full translate-x-1/4"
+                    } 
+                    `}
                 >
                   {project.name.split("").map((letter, index) => (
-                    <span key={index}>{letter}</span>
+                    <motion.span
+                      key={index}
+                      className="inline-block"
+                      initial={{ translateY: "100%" }}
+                      animate={{ translateY: 0 }}
+                      transition={{
+                        duration: 0.35,
+                        delay: index * 0.05,
+                        ease: "easeInOut",
+                      }}
+                    >
+                      {letter}
+                    </motion.span>
                   ))}
                 </h1>
               )}
@@ -55,7 +69,9 @@ const Featured = () => {
                 className="card rounded-xl overflow-hidden"
               >
                 <img
-                  className="w-full h-full object-cover"
+                  className={`w-full h-full object-cover transition-all duration-[600ms] ease-in-out ${
+                    hoveredCard === project.id ? "scale-[1.1]" : "scale-[1]"
+                  }`}
                   src={project.imgSrc}
                   alt={project.name}
                 />

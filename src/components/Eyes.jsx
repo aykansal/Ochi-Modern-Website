@@ -14,7 +14,7 @@ const Eyes = () => {
 
   return (
     <div className="eyes w-full h-screen overflow-hidden">
-      <div className="w-full h-full relative bg-[url('https://ochi.design/wp-content/uploads/2022/05/Top-Viewbbcbv-1-1440x921.jpg')] bg-cover bg-center ">
+      <div data-scroll data-scroll-section  data-scroll-speed='-.7' className="w-full h-full relative bg-[url('https://ochi.design/wp-content/uploads/2022/05/Top-Viewbbcbv-1-1440x921.jpg')] bg-cover bg-center ">
         <div className="flex gap-10 absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%]">
           {[1, 2].map((i) => (
             <div

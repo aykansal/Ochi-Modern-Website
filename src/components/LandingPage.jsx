@@ -4,7 +4,11 @@ import { MdArrowOutward } from "react-icons/md";
 
 const LandingPage = () => {
   return (
-    <div className="dark:bg-zinc-900 h-screen w-full pt-px">
+    <div
+    data-scroll
+    data-scoll-section
+    data-scroll-speed='-.3'
+    className="dark:bg-zinc-900 h-screen w-full pt-px">
       <div className="textstructure mt-32 px-16">
         {["We Create", "Eye-opening", "presentations"].map((item, index) => (
           <div key={index} className="masker">
