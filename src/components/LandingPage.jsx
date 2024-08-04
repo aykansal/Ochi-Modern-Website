@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React from "react";
 import { MdArrowOutward } from "react-icons/md";
 
@@ -9,7 +10,12 @@ const LandingPage = () => {
           <div key={index} className="masker">
             <div className="w-fit flex items-baseline">
               {index === 1 && (
-                <div className="mr-3 w-[8.5vw] h-[5.5vw] bg-green-400 rounded-md " />
+                <motion.div
+                  initial={{ width: 0 }}
+                  animate={{ width: "9vw" }}
+                  transition={{ ease: [0.6, 0, 0.24, 1], duration: 1 }}
+                  className="mr-2 w-[8.5vw] h-[5.5vw] bg-green-400 rounded-md "
+                />
               )}
               <h1 className="font1 text-[8.75vw] leading-[7.45vw] flex items-center font-medium uppercase">
                 {item}
