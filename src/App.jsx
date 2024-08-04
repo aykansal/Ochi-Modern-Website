@@ -1,5 +1,5 @@
 import React from "react";
-import { About, LandingPage, Marquee, Navbar } from "./components";
+import { About, Eyes, LandingPage, Marquee, Navbar } from "./components";
 
 function App() {
   return (
@@ -8,6 +8,7 @@ function App() {
       <LandingPage />
       <Marquee />
       <About />
+      <Eyes/>
     </div>
   );
 }
