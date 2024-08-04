@@ -5,7 +5,8 @@ import About from "./About";
 import Eyes from "./Eyes";
 import Featured from "./Featured";
 import Cards from "./Cards";
+import Footer from "./Footer";
 
 export {
-    Navbar, LandingPage, Marquee, About, Eyes, Featured,Cards
+    Navbar, LandingPage, Marquee, About, Eyes, Featured, Cards, Footer
 }

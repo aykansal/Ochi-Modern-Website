@@ -1,5 +1,14 @@
 import React from "react";
-import { About, Eyes, Featured, LandingPage, Marquee, Navbar,Cards } from "./components";
+import {
+  About,
+  Eyes,
+  Featured,
+  LandingPage,
+  Marquee,
+  Navbar,
+  Cards,
+  Footer,
+} from "./components";
 
 function App() {
   return (
@@ -8,9 +17,10 @@ function App() {
       <LandingPage />
       <Marquee />
       <About />
-      <Eyes/>
+      <Eyes />
       <Featured />
       <Cards />
+      <Footer />
     </div>
   );
 }
