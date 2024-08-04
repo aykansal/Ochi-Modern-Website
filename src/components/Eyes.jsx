@@ -28,7 +28,7 @@ const Eyes = () => {
                     transform: ` rotate(${rotate}deg)`,
                   }}
                 >
-                  <div className="h-6 w-6 bg-zinc-100 rounded-full "></div>
+                  <div className="h-5 w-5 bg-zinc-100 rounded-full "></div>
                 </div>
               </div>
             </div>
