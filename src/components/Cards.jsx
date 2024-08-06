@@ -2,7 +2,12 @@ import React from "react";
 
 const Cards = () => {
   return (
-    <div className="w-full h-screen bg-zinc-100 flex justify-center pt-20 px-16 gap-4">
+    <div
+      data-scroll
+      data-scroll-section
+      data-scroll-speed="0.1"
+      className="w-full h-screen bg-zinc-100 flex justify-center pt-20 px-16 gap-4"
+    >
       <div className="cardContainer h-[55vh] w-1/2">
         <div className="card relative rounded-xl w-full h-full justify-center bg-[#004D43] flex items-center">
           <img

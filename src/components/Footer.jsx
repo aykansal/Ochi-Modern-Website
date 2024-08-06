@@ -2,7 +2,12 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="w-full h-screen min-h-screen bg-zinc-900 p-16 pb-10 flex gap-5 items-start">
+    <div
+      data-scroll
+      data-scoll-section
+      data-scroll-speed="-0.1"
+      className="w-full h-screen min-h-screen bg-zinc-900 p-16 pb-10 flex gap-5 items-start"
+    >
       <div className="w-1/2 h-full font1 flex flex-col justify-between">
         <div className="heading  text-[8vw] uppercase leading-none leading-none">
           <h1>Eye-</h1>
@@ -25,7 +30,7 @@ const Footer = () => {
               {["Instagram", "Behance", "Facebook", "Linkedin"].map(
                 (item, index) => (
                   <div key={index} className="flex items-center gap-2">
-                    <h1 className="text-zinc-100 font-['Neue_Montreal'] capitalize text-[1.2vw] leading-normal font-thin tracking-wide">
+                    <h1 className="cursor-pointer text-zinc-100 font-['Neue_Montreal'] capitalize text-[1.2vw] leading-normal font-thin tracking-wide">
                       {item}
                     </h1>
                   </div>
@@ -35,11 +40,10 @@ const Footer = () => {
             <div className="flex justify-between">
               <div>
                 <h2 className="my-5">{"L:"}</h2>
-
-                {["Instagram", "Behance", "Facebook", "Linkedin"].map(
+                {["Trending", "Team", "Newsletter", "Portfolio"].map(
                   (item, index) => (
-                    <div key={index} className="flex items-center gap-2">
-                      <h1 className="text-zinc-100 font-['Neue_Montreal'] capitalize text-[1.2vw] leading-normal font-thin tracking-wide">
+                    <div key={index} className="  flex items-center gap-2">
+                      <h1 className="cursor-pointer text-zinc-100 font-['Neue_Montreal'] capitalize text-[1.2vw] leading-normal font-thin tracking-wide">
                         {item}
                       </h1>
                     </div>
@@ -49,9 +53,9 @@ const Footer = () => {
             </div>
             <div>
               <h2 className="my-5">{"C:"}</h2>
-              {["hello@ochi.design"].map((item, index) => (
-                <div key={index} className="flex items-center gap-2">
-                  <h1 className="text-zinc-100 font-['Neue_Montreal'] lowercase text-[1.2vw] leading-normal font-thin tracking-wide">
+              {["kansalayush28@gmail.com"].map((item, index) => (
+                <div key={index} className=" flex items-center gap-2">
+                  <h1 className="cursor-pointer text-zinc-100 font-['Neue_Montreal'] lowercase text-[1.2vw] leading-normal font-thin tracking-wide">
                     {item}
                   </h1>
                 </div>

@@ -1,7 +1,9 @@
-import { motion } from "framer-motion";
 import React from "react";
+import { motion } from "framer-motion";
+import { MdArrowOutward } from "react-icons/md";
 
 const About = () => {
+  const [divHover, setDivHover] = React.useState(false);
   return (
     <div
       data-scroll
@@ -16,9 +18,19 @@ const About = () => {
       <div className="w-full border-t-[1px] border-[#a1b562] mt-20 pt-10 flex gap-10 ">
         <div className="w-1/2">
           <h1 className="text-6xl capitalize">our approach</h1>
-          <button className="px-8 py-[17.5px] mt-10 flex items-center gap-x-9 bg-zinc-900 rounded-full text-zinc-100 uppercase text-sm leading-none">
+          <button
+            onMouseEnter={() => setDivHover(true)}
+            onMouseLeave={() => setDivHover(false)}
+            className="px-8 py-[17.5px] mt-10 flex items-center gap-x-9 bg-zinc-900 rounded-full text-zinc-100 uppercase text-sm leading-none"
+          >
             Read More
-            <div className="w-2 h-2 bg-zinc-100 rounded-full" />
+            <div
+              className={`w-2 h-2 flex items-center text-black bg-zinc-100 rounded-full transition-all duration-100 ease-linear ${
+                divHover && "scale-[4.5]"
+              } `}
+            >
+              {divHover && <MdArrowOutward />}
+            </div>
           </button>
         </div>
         <div className="w-1/2 h-[70vh] rounded-3xl bg-green-900/20 overflow-hidden ">
