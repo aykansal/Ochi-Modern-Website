@@ -6,8 +6,8 @@
 [![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white)](https://vitejs.dev/)
 
-A modern, responsive recreation of the **Ochi Digital Agency Website**, built from scratch using React and today’s frontend tools.  
-Showcases smooth animations, responsive design, and blazing performance.
+- A modern, responsive recreation of the **Ochi Digital Agency Website**, built from scratch using React and today’s frontend tools.  
+- Showcases smooth animations, responsive design, and blazing performance.
 
 ## 🚀 Features
 
